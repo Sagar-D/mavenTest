@@ -15,13 +15,23 @@ public class BaseClass {
 	}
 	
 	@BeforeTest
-	public static void testSetup() {
-		System.out.println("Started a new Testcase.....");
+	public static void firstTestOfTheClassSetup() {
+		System.out.println("This is the first testcase of this class");
 	}
 	
 	@AfterTest
+	public static void lastTestOfTheClassTeardown() {
+		System.out.println("Tested done for first testcase of this class");
+	}
+	
+	@BeforeMethod
+	public static void testSetup() {
+		System.out.println("Starting a new test");
+	}
+	
+	@AfterMethod
 	public static void testTeardown() {
-		System.out.println("Tested done for a testcase");
+		System.out.println("completed a testcase");
 	}
 	
 }
