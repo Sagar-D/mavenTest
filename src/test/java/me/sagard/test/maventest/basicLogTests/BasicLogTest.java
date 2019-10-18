@@ -3,8 +3,9 @@ package me.sagard.test.maventest.basicLogTests;
 import org.testng.Assert;
 
 import org.testng.annotations.Test;
+import me.sagard.test.maventest.BaseClass;
 
-public class BasicLogTest {
+public class BasicLogTest extends BaseClass{
 	
 	@Test(groups = {"logTest"})
 	public static void testLetsPrintHello() {

@@ -1,0 +1,8 @@
+<suite name="AllTestCases" verbose="1" >
+  <test name="Regression1"   >
+    <packages>
+      <package name="me.sagard.test.maventest.basicLogTests" />
+      <package name="me.sagard.test.maventest.restAssuredTest" />
+   </packages>
+ </test>
+</suite>
