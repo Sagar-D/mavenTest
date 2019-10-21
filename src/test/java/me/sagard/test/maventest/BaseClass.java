@@ -24,6 +24,16 @@ public class BaseClass {
 		System.out.println("After Test");
 	}
 	
+	@BeforeClass
+	public static void beforeClassMethod() {
+		System.out.println("Before Class");
+	}
+	
+	@AfterClass
+	public static void afterClassMethod() {
+		System.out.println("After Class");
+	}
+	
 	@BeforeMethod
 	public static void testSetup() {
 		System.out.println("Before Method");
@@ -32,6 +42,16 @@ public class BaseClass {
 	@AfterMethod
 	public static void testTeardown() {
 		System.out.println("After Method");
+	}
+	
+	@BeforeGroups
+	public static void beforeGroupMethod() {
+		System.out.println("Before Group");
+	}
+	
+	@AfterGroups
+	public static void afterGroupMethod() {
+		System.out.println("After Group");
 	}
 	
 }
