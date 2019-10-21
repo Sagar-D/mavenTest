@@ -6,32 +6,32 @@ public class BaseClass {
 	
 	@BeforeSuite
 	public static void suiteSetup() {
-		System.out.println("Setting up the suite");
+		System.out.println("Before Suite");
 	}
 	
 	@AfterSuite
 	public static void suiteTeardown() {
-		System.out.println("Test Suite completetd");
+		System.out.println("After Suite");
 	}
 	
 	@BeforeTest
 	public static void firstTestOfTheClassSetup() {
-		System.out.println("This is the first testcase of this class");
+		System.out.println("Before Test");
 	}
 	
 	@AfterTest
 	public static void lastTestOfTheClassTeardown() {
-		System.out.println("Tested done for first testcase of this class");
+		System.out.println("After Test");
 	}
 	
 	@BeforeMethod
 	public static void testSetup() {
-		System.out.println("Starting a new test");
+		System.out.println("Before Method");
 	}
 	
 	@AfterMethod
 	public static void testTeardown() {
-		System.out.println("completed a testcase");
+		System.out.println("After Method");
 	}
 	
 }
