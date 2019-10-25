@@ -2,6 +2,8 @@ package me.sagard.test.maventest;
 
 import org.testng.annotations.*;
 
+import io.restassured.RestAssured;
+
 public class BaseClass {
 	
 	@BeforeSuite
@@ -17,6 +19,10 @@ public class BaseClass {
 	@BeforeTest
 	public static void firstTestOfTheClassSetup() {
 		System.out.println("Before Test");
+		
+		final String base_url = "https://subscriptions-subqa.practodev.com";
+		RestAssured.baseURI = base_url;
+		
 	}
 	
 	@AfterTest
